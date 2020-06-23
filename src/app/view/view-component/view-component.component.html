@@ -1,1 +1,10 @@
-<p>view-component works!</p>
+Username <input [(ngModel)]="userName"/>
+<button  (click)="search()">Search</button>
+<div *ngIf="response"> 
+<p>Login name: {{response.login}}</p>
+
+<div class="img-container">
+    <img src={{response.avatar_url}} alt="" srcset="">
+</div>
+
+</div>

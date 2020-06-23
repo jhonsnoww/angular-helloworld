@@ -13,9 +13,16 @@ export class AddressCardComponent implements OnInit {
 
   @Input('user') user: User;
   isCollapsed: boolean = true;
-
+ 
 
   constructor() {
+    this.user = new User();
+    this.user.name = "Foo Bar",
+      this.user.title = "Front End Developer",
+      this.user.address = "Ma Har Aung Myae",
+      this.user.phone = [
+        "123,443,553"
+      ]
 
   }
   toggleCollap() {
